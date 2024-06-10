@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receiver HTML</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div>
+      <input type="text" id="username" placeholder="Enter Username" /><br />
+      <button onclick="joinCall()">Join Call</button>
+    </div>
+    <div id="video-call-div">
+      <video muted id="local-video" autoplay></video>
+      <video id="remote-video"></video>
+      <div class="call-action-div">
+        <button onclick="muteVideo()">Mute Video</button>
+        <button onclick="muteAudio()">Mute Audio</button>
+      </div>
+    </div>
+  </body>
+  <script src="./receiver.js"></script>
+</html>
